@@ -23,10 +23,9 @@ class Square extends Shape {
   name;
   noOfSides;
   constructor(sideLength) {
-    // 
     super(sideLength)
     this.name = 'square';
-    this.noOfSides = 4; 
+    this.noOfSides = 4;
   }
 
   calcPerimeter() {

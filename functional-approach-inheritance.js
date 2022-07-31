@@ -1,17 +1,37 @@
-function Shape(sideLength) {
-    console.log(`in function Shape this ${JSON.stringify(this)}`);
-    this.eachSideLength = sideLength;
-    console.log(`in function Shape this ${JSON.stringify(this)}`);
+function Shape(noOfSides, sideLength) {
+  console.log(`in Shape fun ${JSON.stringify(this)}`);
+  this.eachSideLength = sideLength;
+  console.log(`in Shape fun ${JSON.stringify(this)}`);
 }
-let newShape = Shape.bind({
-    eachSideLength: 45
-}, 7);
-newShape();
+Shape.prototype.calcPerimeter = function () {
+  console.log(`Parent Perimeter ${this.noOfSides * this.eachSideLength}`);
+  console.log(
+    `name ${this.name} noOfSides ${this.noOfSides} eachSideLength ${this.eachSideLength}`
+  );
+};
 
-Shape.call({
-    eachSideLength: 30
-}, 12)
+function Square(sideLength) {
+  this.name = "square";
+  this.noOfSides = 4;
+  this.eachSideLength = sideLength;
+}
+Square.prototype.calcPerimeter = function () {
+  console.log(`Child Perimeter ${this.noOfSides * this.eachSideLength}`);
+  console.log(
+    `name ${this.name} noOfSides ${this.noOfSides} eachSideLength ${this.eachSideLength}`
+  );
+};
+Square.prototype.calcArea = function () {
+  console.log(`area ${this.noOfSides * this.eachSideLength}`);
+  console.log(`name ${this.name} noOfSides ${this.noOfSides}`);
+};
+Object.setPrototypeOf(
+    Square.prototype,
+    Shape.prototype
+);
 
-Shape.apply({
-    eachSideLength: 11
-}, [12])
+let square = new Square(5);
+square.calcPerimeter();
+square.calcArea();
+// let genericShape = new Shape(6);
+// genericShape.calcPerimeter();
