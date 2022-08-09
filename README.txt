@@ -11,28 +11,30 @@ Todos:
                 Composition
                 Aggregation
                 Polymorphism, static polymorphism and dynamic polymorphism
-        NOT DONE
-            examples of apply call bind
-            Abstract classes
-            Interface
-            encapsulation
-            static variables
-            static classes
-            static methods
-            virtual keyword
-            function overloading i.e static polymorphism, static binding, compile time decision
-            function overriding i.e dynamic polymorphism, dynamic binding, runtime decision
-            getters and setters of classes
+                examples of apply call bind
+                Abstract classes
+                Interface
+                encapsulation
+                getters and setters of classes
+                static variables
+                static classes
+                static methods
+                function overloading i.e static polymorphism, static binding, compile time decision
+                function overriding i.e dynamic polymorphism, dynamic binding, runtime decision
+                virtual keyword
+        NOT DONE            
             class declarations and class expressions
     DSA
-        Set in js
-        arrays
-        hashmaps
-        hash
-        stack
-        queue
-        calculating space and time complexity
-        recursions along with examples
+        DONE
+            Set in js
+            arrays
+        NOT DONE
+            hashmaps
+            hash
+            stack
+            queue
+            calculating space and time complexity
+            recursions along with examples
     Design Patterns
     https://www.patterns.dev/posts/classic-design-patterns
         Singleton

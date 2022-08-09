@@ -299,3 +299,86 @@
 // obj.x = 5;
 // console.log(map(square)(arr));
 // console.log(map(square)(obj));
+
+// ==============APPLY, CALL, BIND ===========
+// APPLY: call a function with provided thisArg and array of arguments
+// Call: call a function with provided thisArg and comma seperated values of Arguments
+// Bind: returns a new function which can be called later on with provided thisArg and an array of arguments
+// examples later
+
+// ==============ABSTRACT CLASSES, Abstract keyword, Abstraction===============
+// Abstraction: hiding the internal details
+// there is no specific Abstract keyword in js, but whatever the goals other languages achieve by abstract classes and abstract methods
+// we can achieve the same here
+// example: https://stackoverflow.com/questions/597769/how-do-i-create-an-abstract-base-class-in-javascript
+
+// ===============INTERFACES====================
+// there is no specialized keyword for interfaces in js
+// there is no notion of "this class must have these functions"
+// with the help of one library this can be achieved https://github.com/Jahans3/implement.js
+
+// ==============ENCAPSULATION============
+// private, public, protected keywords
+// protected fields are those which are only accessible by child classes and not by outside world
+// there is no direct approach of implementing protected members in js
+// https://stackoverflow.com/questions/34517581/access-modifiers-private-protected-in-es6
+// above url tries to pul light on these concepts, I was unable to understand the examples about protected there
+
+// class Parent {
+//   publicField; // public by default
+//   #privateField; // private
+//   // x and #x are 2 different member variables of this class
+//   constructor(x) {
+//     this.publicField = "public";
+//     this.#privateField = x;
+//   }
+//   get privateField() {
+//     console.log("get privateField function");
+//     return this.#privateField;
+//   }
+//   set privateField(value) {
+//     this.#privateField = value;
+//   }
+// }
+// let myParent = new Parent("private");
+// console.log(myParent.publicField);
+// console.log(obj.#x); // Error: private property not accessible outside the class
+// console.log(myParent.privateField); // private field accessed via getter function
+// let mychild = new Child();
+// mychild.fun();
+
+// ====================STATIC KEYWORD==========================
+// static class, methods, fields
+// static class Parent { // Error: static modifier cannot appear on a module or namespace element
+// class Parent {
+//   static PublicField;
+//   constructor(val) {
+//     Parent.PublicField = val;
+//   }
+//   static PublicMethod() {
+//     // this static method is only accessible via classname i.e Parent
+//     // will it be callable from nonstatic method?? YES
+//     // will it be callable from this class instances?? NO
+//     console.log(`in static public method ${Parent.PublicField}`);
+//   }
+//   nonStaticPublicMethod() {
+//     console.log(`non static public method`);
+//     Parent.PublicMethod();
+//     // this.PublicMethod(); // Error: unable to access static method via this
+//   }
+// }
+// let obj1 = new Parent('1');
+// console.log(obj1.PublicField); // undefined: static fields are not accessible via instances of class
+// console.log(Parent.PublicField);
+// console.log(Parent.PublicField);
+// let obj2 = new Parent('2');
+// console.log(Parent.PublicField);
+// console.log(Parent.PublicField);
+// obj1.nonStaticPublicMethod();
+// obj1.PublicMethod(); // Error: static method cannot be called from instance of a class
+
+// ============VIRTUAL KEYWORD IN JAVASCRIPT===============
+// This virtual concept is present in c# and c++, virtual functions and pure virtual functions are being overriden in child classes and with these runtime polymorphism is being achieved
+// in js, runtime polymorphism is achieved is some other way as mentioned above
+// infact, All methods in Javascript and Typescript are technically virtual since there's nothing preventing you from being able to override any method, unless its private
+
