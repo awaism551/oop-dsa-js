@@ -28,11 +28,11 @@ Todos:
         DONE
             Set in js
             arrays
-        NOT DONE
             hashmaps
-            hash
             stack
             queue
+        NOT DONE
+            hash
             calculating space and time complexity
             recursions along with examples
     Design Patterns
