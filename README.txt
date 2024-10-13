@@ -26,13 +26,16 @@ Todos:
             class declarations and class expressions
     DSA
         DONE
-            Set in js
             arrays
-            hashmaps
             stack
             queue
         NOT DONE
+            Set in js
+            hashmaps
             hash
+            Binary Tree
+                Perfect Binary Tree
+                Almost complete binary tree
             calculating space and time complexity
             recursions along with examples
     Design Patterns
@@ -54,5 +57,6 @@ Todos:
         Overriding the result of a constructor
         how everything is an object in js??
         if some function/class is present in one js file, that can be accessed in other js file present at same path, how?? though they have no relationship together
+        is js compiled time language or interpreted language?? explain with example
 
         

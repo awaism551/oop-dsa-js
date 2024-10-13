@@ -2,6 +2,7 @@
 // YOUTUBE PLAYLIST FROM CODEEVOLUTION CHANNEL ABOUT DSA IN JS
 // Sets in js
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+// can we use sets for json??what if we want to remove duplicate objects from array based on id property in objects, can we do that with sets??
 // Hashmaps custom implementation
 // https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps
 // Maps native implementation in js
@@ -50,16 +51,16 @@
 
 
 // FACTORIAL
-function factorial(n) {
-    if (n === 0) {
-        return 1;
-    } else {
-        return n * factorial(n-1);
-    }
-}
-console.log(factorial(2));
-console.log(factorial(1));
-console.log(factorial(0));
-console.log(factorial(3));
-console.log(factorial(4));
-console.log(factorial(5));
+// function factorial(n) {
+//     if (n === 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n-1);
+//     }
+// }
+// console.log(factorial(2));
+// console.log(factorial(1));
+// console.log(factorial(0));
+// console.log(factorial(3));
+// console.log(factorial(4));
+// console.log(factorial(5));

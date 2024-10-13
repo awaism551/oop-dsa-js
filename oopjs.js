@@ -106,7 +106,7 @@
 // this approach of multilevel inheritance is static approach, one drawback of this approach is what if
 // this hierachy is lengthy and at sometime we want to change something in hierachy, we have to change at multiple places
 // at that time, dynamic approach of implementing multilevel inheritance comes into play, that can be achieved using mixins
-// example of mixins is given file "multilevelInheritance.js Example 2"
+// example of mixins is given file "multilevelInheritance.js"
 
 // class GrandMother {
 //   name;
@@ -233,7 +233,7 @@
 //   constructor(b) {
 //     this.b = {}
 //     this.b = b; // pass by value
-//     Object.assign(this.b, b); // this is pass by reference
+//     // Object.assign(this.b, b); // this is pass by reference
 //     console.log(`logging member variable of B class ${this.b.memberVariable}`)
 //   }
 //   getB() {
