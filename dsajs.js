@@ -1,27 +1,3 @@
-// https://www.youtube.com/watch?v=poGEVboh9Rw&list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy
-// YOUTUBE PLAYLIST FROM CODEEVOLUTION CHANNEL ABOUT DSA IN JS
-// Sets in js
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-// can we use sets for json??what if we want to remove duplicate objects from array based on id property in objects, can we do that with sets??
-// Hashmaps custom implementation
-// https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#HashMaps
-// Maps native implementation in js
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-// https://stackoverflow.com/questions/8877666/how-is-a-javascript-hash-map-implemented
-// WeakSet
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet
-// WeakMap
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap
-// Linked Lists: Singly and Doubly
-// https://adrianmejia.com/data-structures-time-complexity-for-beginners-arrays-hashmaps-linked-lists-stacks-queues-tutorial/#Linked-Lists
-// Stacks and Queue implementation also present in above url
-
-// todo reading List
-// https://adrianmejia.com/data-structures-for-beginners-graphs-time-complexity-tutorial/
-// https://adrianmejia.com/priority-queue-data-structure-and-heaps-time-complexity-javascript-implementation/
-
-// =============ALGORITHMS AND THEIR IMPLEMENTATION IN JS=============
-// O(log n) when the input size reduces by half on each iteration
 
 // ======SOME MATH ALGOS IMPLEMENTATION================
 // FIBONACCI SEQUENCE
